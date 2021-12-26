@@ -35,8 +35,8 @@ def extra_compile_args():
     return ['-std=c++14'] + multiarch_args()
 
 def make_command():
-#    return 'nmake' if sys.platform == 'win32' else 'make'  # 'nmake' isn't found on github actions' VM
-    return 'make'
+   return 'nmake' if sys.platform == 'win32' else 'make'  # 'nmake' isn't found on github actions' VM
+#     return 'make'
 
 def dll_suffix():
     """Returns the file suffix ("extension") of a DLL"""
